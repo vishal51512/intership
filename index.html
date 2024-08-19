@@ -312,16 +312,15 @@ rel="stylesheet"
 </div>
 <script>
   var loader = document.getElementById("preloader");
-  window.addEventListener("load", function() {
-  loader.style.display = "none";
-  })
+  window.addEventListener('load', function(load) {
+  window.removeEventListener('load', load, false);               
+  setTimeout(function(){loader.style.display = 'none'},800);
+
+},false);
+)}
 </script>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI?si=kgGFWWaRDI_n7WkK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI?si=kgGFWWaRDI_n7WkK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI?si=kgGFWWaRDI_n7WkK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI?si=kgGFWWaRDI_n7WkK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI?si=kgGFWWaRDI_n7WkK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 </body>
 
 </html>
